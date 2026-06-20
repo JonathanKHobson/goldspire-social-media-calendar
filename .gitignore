@@ -5,7 +5,9 @@
 # but do not publish Chrome profiles, logs, or temporary server crumbs.
 .server-*.pid
 qa/**/*.log
+qa/screenshots/*.snapshot.txt
 qa/**/chrome-profile/
+.playwright-cli/
 
 # Local env/config secrets should never be part of the public repo.
 .env
