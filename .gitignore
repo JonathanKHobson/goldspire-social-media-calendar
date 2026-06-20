@@ -1,0 +1,13 @@
+.DS_Store
+._*
+
+# Local browser/QA helper output. Keep screenshot PNGs and Markdown QA notes,
+# but do not publish Chrome profiles, logs, or temporary server crumbs.
+.server-*.pid
+qa/**/*.log
+qa/**/chrome-profile/
+
+# Local env/config secrets should never be part of the public repo.
+.env
+.env.*
+*.local

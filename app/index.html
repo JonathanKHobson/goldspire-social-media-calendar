@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Goldspire Social Media Calendar</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Manual Posting Calendar</p>
+        <h1>Goldspire Social Media Calendar</h1>
+        <p class="lede">June 19-July 31, 2026. Draft, copy, post manually, and mark progress locally.</p>
+      </div>
+      <div class="header-actions">
+        <a class="button secondary" href="../content/calendar-june19-july31.md" target="_blank" rel="noreferrer">Markdown Calendar</a>
+        <a class="button secondary" href="../docs/strategy-brief.md" target="_blank" rel="noreferrer">Strategy Brief</a>
+        <a class="button primary" href="https://jonathankhobson.github.io/gm/events/" target="_blank" rel="noreferrer">Events Page</a>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="toolbar" aria-label="Calendar controls">
+        <div class="tabs" role="tablist" aria-label="Views">
+          <button class="tab is-active" data-view="calendar" type="button">Calendar</button>
+          <button class="tab" data-view="queue" type="button">Queue</button>
+          <button class="tab" data-view="templates" type="button">Templates</button>
+          <button class="tab" data-view="ads" type="button">Ad Plan</button>
+        </div>
+        <label class="field">
+          <span>Platform</span>
+          <select id="platformFilter">
+            <option value="all">All platforms</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Status</span>
+          <select id="statusFilter">
+            <option value="all">All statuses</option>
+            <option value="draft">Draft</option>
+            <option value="needs_edit">Needs edit</option>
+            <option value="needs_rule_check">Needs rule check</option>
+            <option value="posted">Posted</option>
+            <option value="skipped">Skipped</option>
+          </select>
+        </label>
+        <label class="field search-field">
+          <span>Search</span>
+          <input id="searchFilter" type="search" placeholder="Hook, audience, asset...">
+        </label>
+      </section>
+
+      <section class="view is-active" id="calendarView" aria-label="Calendar"></section>
+      <section class="view" id="queueView" aria-label="Queue"></section>
+      <section class="view" id="templatesView" aria-label="Templates"></section>
+      <section class="view" id="adsView" aria-label="Ad plan"></section>
+    </main>
+
+    <aside class="detail-panel" id="detailPanel" aria-label="Post detail" aria-hidden="true">
+      <div class="detail-backdrop" data-close-panel></div>
+      <article class="detail-card">
+        <button class="icon-button close-button" data-close-panel type="button" aria-label="Close detail">x</button>
+        <div id="detailContent"></div>
+      </article>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="src/data.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
+
