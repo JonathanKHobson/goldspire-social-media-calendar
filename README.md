@@ -9,6 +9,8 @@ created: 2026-06-19
 
 Static manual-posting calendar for promoting `Peril to Profit: The Goldspire Messengers` from June 19 through July 31, 2026.
 
+This is a historical campaign calendar. Review dates, links, and event details against current plans before reusing any post. The working post data is in `app/src/data.js`; `content/` contains readable planning and copy references.
+
 Public app URL:
 
 ```text
