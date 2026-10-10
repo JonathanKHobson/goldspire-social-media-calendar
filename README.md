@@ -48,3 +48,9 @@ For every post:
 ## Scope Guard
 
 This MVP is intentionally built for manual posting and fast revision. Do not add account automation, API scheduling, paid spend automation, or new generated assets inside this lane unless that becomes the next explicit deliverable.
+
+## Site publication
+
+This repository remains the Goldspire Calendar source. The native GameMasterKyle Site hosts a pinned projection under `/goldspire-calendar/`; GitHub Pages remains a compatibility address and keeps the original browser-state export path on the shared Pages origin.
+
+[Open the current public experience](https://gamemaster-kyle.jkylehobson.chatgpt.site/goldspire-calendar/).
